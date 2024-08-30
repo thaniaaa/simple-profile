@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-
+   scale=1.0"> <!-- agar website responsif -->
+   <title>Tugas uts PBW </title>
+   <link rel="stylesheet" href="style.css"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+      <nav>
+         <div class="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="utspbw.html">HOME</a></li>
+               <li><a href="subheader.html">PROFILE</a></li>
+               <li><a href="curriculumvitae.html">CURRICULUM VITAE</a></li>
+               <li><a href="galeri.html">GALERI/PORTOFOLIO</a></li>
+               <li><a href="kontak.html">KONTAK</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Curriculum vitae</h1>
+    </section>
+
+   <!-----data diri---------->
+<section class="datadiri">
+   <h1>Curriculum Vitae</h1>
+
+   <div class="row">
+      <div class="datadiri-col">
+        <h3>Data Diri</h3>
+        <p>Nama: Thania Aprilah</p>
+        <p>NIM: A11202214525</p>
+        <P>Prodi: Teknik Informatika</P>
+        <p>TTL: Subang, 5 April 2004</p>
+        <p>Jenis Kelamin: Perempuan</p>
+        <p>Agama: Islam</p>
+      </div>
+      <div class="datadiri-col">
+        <h3>Riwayat Pendidikan</h3>
+        <p>SDN GAMBARSARI<br>2013-2018</p>
+        <p>SMPN 1 BINONG<br>2018-2020</p>
+        <p>SMAN 1 PAGADEN<br>2020-2022</p>
+      </div>
+      <div class="datadiri-col">
+        <h3>Skills</h3>
+        <p>Communication</p>
+        <p>Critical thinking</p>
+        <p>Teamwork</p>
+        <p>Time management</p>
+      </div>
+   </div>
+
+  </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+<!---footer -->
+<section class="footer">
+    <p>This pages was created by thania aprilah, for exam pbw purposes</p>
+ </section>
+
+<!-----JavaScript for Toggle Menu------>
+    <script>
+
+      var navlinks = document.getElementById("navlinks");
+      function showMenu(){
+         navLinks.style.right = "0";
+      }
+      function hideMenu(){
+         navLinks.style.right = "-200px";
+      }
+
+    </script>
+
+
+
+</body>
+</html>

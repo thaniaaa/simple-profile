@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-
+   scale=1.0"> <!-- agar website responsif -->
+   <title>Tugas Dasar Komputasi</title>
+   <link rel="stylesheet" href="daskom.css"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+      <nav>
+         <div class="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="daskom.html">HOME</a></li>
+               <li><a href="dskprofile.html">PROFILE</a></li>
+               <li><a href="dskartikel.html">ARTIKEL</a></li>
+               <li><a href="dskbukutamu.html">BUKU TAMU</a></li>
+               <li><a href="dskkontak.html">KONTAK</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>BUKU TAMU</h1>
+    </section>
+
+    <!---buku tamu content-->
+
+    <section class="kontak">
+        <div class="row">
+            <div class="kontak-col">
+                <h2>Formulir Untuk Tamu</h2>
+                <form method="POST" action="proses.php">
+                    <label>Nama Lengkap:</label>
+                    <input type="text" name="nama" placeholder="Masukkan Nama Lengkap" autocomplete="off"> <br>
+                    <label>Jenis Kelamin: </label>
+                    <input type="radio" name="jk" value="1" checked=""> Laki-laki 
+                    <input type="radio" name="jk" value="2"> Perempuan
+                    <br>
+                    <label>Alamat: </label>
+                    <textarea name="alamat" placeholder="Tulis alamatmu"></textarea><br>
+                    <label>Aktif pada social media: </label>
+                    <input type="checkbox" name="sosmed[]" value="twitter"> Twitter
+                    <input type="checkbox" name="sosmed[]" value="facebook"> Facebook
+                    <input type="checkbox" name="sosmed[]" value="path"> Path
+                    <input type="checkbox" name="sosmed[]" value="instagram"> Instagram
+                    <br>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Masukkan alamat email" autocomplete="off"> <br>
+                    <label>Pesan: </label>
+                    <textarea name="pesan" placeholder="tuliskan pesan"></textarea><br>
+                    <label>Aktif pada social media: </label>
+                    <label>Mengetahui web ini dari</label>
+                    <select name="infoweb">
+                        <option selected="" disabled="">-Pilih-</option>
+                        <option value="media">Social Media</option>
+                        <option value="temansodara">Teman/Sodara</option>
+                        <option value="webudinus">Web udinus</option>
+                    </select>
+                    <br>
+                    
+            
+                    <input type="submit" value="Simpan" name="cbl">
+                    <input type="reset" value="Hapus isian">
+                </form>
+                </select>
+            
+            
+
+       
+        </div>
+        <div class="kontak-col">
+            <img src="">
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!---footer -->
+<section class="footer">
+    <p>This pages was created by thania aprilah</p>
+ </section>
+
+<!-----JavaScript for Toggle Menu------>
+    <script>
+
+      var navlinks = document.getElementById("navlinks");
+      function showMenu(){
+         navLinks.style.right = "0";
+      }
+      function hideMenu(){
+         navLinks.style.right = "-200px";
+      }
+
+    </script>
+
+
+
+</body>
+</html>

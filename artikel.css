@@ -1,0 +1,21 @@
+
+.artikel{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+ }
+ .artikel-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+ }
+ .artikel-col img{
+    width: 60%;
+ }
+ .artikel-col h1{
+    padding-top: 0;
+ }
+ .artikel-col p{
+    padding: 15px 0 25px;
+ }
+ 
